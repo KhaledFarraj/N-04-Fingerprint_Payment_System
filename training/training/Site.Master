@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="training.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <link href="Content/bootstrap-rtl.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <link href="Content/jquery-ui.min.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .btn-success {
+            color: white !important;
+        }
+
+
+        .float_left {
+            float: left;
+        }
+
+        #header {
+            background-image: url('../Images/header_fingerprints.png');
+            background-position: top center;
+            background-repeat: repeat-x;
+        }
+    </style>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="top: 0; padding-top: 0; margin-top: 0; position: inherit; right: 7px; left: -36px;">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+
+
+    </form>
+</body>
+</html>
